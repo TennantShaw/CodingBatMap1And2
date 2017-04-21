@@ -10,6 +10,8 @@
 		303DE1B01EA7DD83001BC6EE /* CodingBatMap1And2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 303DE1A61EA7DD83001BC6EE /* CodingBatMap1And2.framework */; };
 		303DE1B51EA7DD83001BC6EE /* CodingBatMap1And2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303DE1B41EA7DD83001BC6EE /* CodingBatMap1And2Tests.swift */; };
 		303DE1B71EA7DD83001BC6EE /* CodingBatMap1And2.h in Headers */ = {isa = PBXBuildFile; fileRef = 303DE1A91EA7DD83001BC6EE /* CodingBatMap1And2.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		303DE1C11EA7DDA6001BC6EE /* Map1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303DE1C01EA7DDA6001BC6EE /* Map1.swift */; };
+		303DE1C31EA7DDB3001BC6EE /* Map2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303DE1C21EA7DDB3001BC6EE /* Map2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,9 @@
 		303DE1AF1EA7DD83001BC6EE /* CodingBatMap1And2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodingBatMap1And2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		303DE1B41EA7DD83001BC6EE /* CodingBatMap1And2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodingBatMap1And2Tests.swift; sourceTree = "<group>"; };
 		303DE1B61EA7DD83001BC6EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		303DE1C01EA7DDA6001BC6EE /* Map1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Map1.swift; sourceTree = "<group>"; };
+		303DE1C21EA7DDB3001BC6EE /* Map2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Map2.swift; sourceTree = "<group>"; };
+		303DE1C41EA7E602001BC6EE /* ScratchPaper.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ScratchPaper.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +77,9 @@
 			isa = PBXGroup;
 			children = (
 				303DE1A91EA7DD83001BC6EE /* CodingBatMap1And2.h */,
+				303DE1C01EA7DDA6001BC6EE /* Map1.swift */,
+				303DE1C21EA7DDB3001BC6EE /* Map2.swift */,
+				303DE1C41EA7E602001BC6EE /* ScratchPaper.playground */,
 				303DE1AA1EA7DD83001BC6EE /* Info.plist */,
 			);
 			path = CodingBatMap1And2;
@@ -148,6 +156,7 @@
 				TargetAttributes = {
 					303DE1A51EA7DD83001BC6EE = {
 						CreatedOnToolsVersion = 8.3;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					303DE1AE1EA7DD83001BC6EE = {
@@ -196,6 +205,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				303DE1C11EA7DDA6001BC6EE /* Map1.swift in Sources */,
+				303DE1C31EA7DDB3001BC6EE /* Map2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,6 +333,7 @@
 		303DE1BB1EA7DD83001BC6EE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -333,6 +345,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.Tennant.Shaw.CodingBatMap1And2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -340,6 +353,7 @@
 		303DE1BC1EA7DD83001BC6EE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -358,6 +372,7 @@
 		303DE1BE1EA7DD83001BC6EE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = CodingBatMap1And2Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Tennant.Shaw.CodingBatMap1And2Tests;
@@ -369,6 +384,7 @@
 		303DE1BF1EA7DD83001BC6EE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = CodingBatMap1And2Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Tennant.Shaw.CodingBatMap1And2Tests;
